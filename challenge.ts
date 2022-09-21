@@ -5,7 +5,7 @@ export interface IUser {
   age: number;
 }
 
-const prettyPrintWilder = (users : IUser[]) => {
+const prettyPrintWilder = (users : IUser[]) : void => {
   users.map((user) => {
     console.log(`${user.name} is ${user.age} years old`);
   });
